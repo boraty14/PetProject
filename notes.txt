@@ -1,0 +1,20 @@
+haptic -> ??
+
+save -> doable
+
+button -> doable
+
+character, anims -> doable
+
+level up -> doable
+
+
+============================================================================================
+
+use lua modules
+
+collection factory => creates inside same collection / same game world
+
+collection proxy => creates new gameworld, take care of url
+
+change go(prefab), changes every instance and vice versa

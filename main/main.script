@@ -6,5 +6,6 @@ end
 function on_input(self, action_id, action)
 	if action_id == hash("touch") and action.pressed then
 		print("Touch!")
+		vibrate.vibrate(200)
 	end
 end
