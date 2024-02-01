@@ -42,7 +42,7 @@ function update(self, dt)
 		self.velocity = vmath.vector3()
 		self.direction = 0
 	end
-	print(movement)
+	--print(movement)
 	go.set_position(p + movement)
 end
 
