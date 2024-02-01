@@ -14,6 +14,7 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("collision_response") then
 		msg.post("main#gui", "add_score", {amount = score})
 		sound.play("main#coin_sound")
+		particlefx.play("#pick_up")
 		go.delete()
 	end
 end
