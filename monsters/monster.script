@@ -1,0 +1,23 @@
+function init(self)
+	-- play jump animation at init
+	--msg.post("#sprite", "play_animation", {id = hash("jump")})
+end
+
+local function play_jump()
+	msg.post("#sprite", "play_animation", { id = hash("jump") })
+end
+
+
+function on_message(self, message_id, message, sender)
+	-- check for animation done response
+	print(message_id)
+	if message_id == hash("animation_done") and message.id == hash("jump") then
+		-- start the walk animation
+		print(123)
+		print(message.id)
+		msg.post("#sprite", "play_animation", { id = hash("idle") })
+		timer.delay(2,false,play_jump)
+		
+	end
+end
+

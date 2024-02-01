@@ -1,0 +1,25 @@
+local speed = -1000
+
+
+function update(self, dt)
+	local first_bg_pos = go.get_position("first_bg")
+	local second_bg_pos = go.get_position("second_bg")
+	
+	first_bg_pos.x = first_bg_pos.x + speed * dt
+	second_bg_pos.x = second_bg_pos.x + speed * dt
+	
+	if first_bg_pos.x <= -1800 then
+		first_bg_pos.x = second_bg_pos.x + 1800
+	end
+	
+	if second_bg_pos.x <= -1800 then
+		second_bg_pos.x = first_bg_pos.x + 1800
+	end
+	print(first_bg_pos)
+	print(second_bg_pos)
+	print("hmm")
+	print(first_bg_pos.x - second_bg_pos.x)
+	
+	go.set_position(first_bg_pos,"first_bg")
+	go.set_position(second_bg_pos, "second_bg")
+end

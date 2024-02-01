@@ -1,4 +1,4 @@
-haptic -> ??
+haptic -> doable / almost done, unify it
 
 save -> doable
 
@@ -8,6 +8,19 @@ character, anims -> doable
 
 level up -> doable
 
+============================================================================================
+
+find charecter and flipbook anims (idle,happy,sad)
+
+set buttons
+
+set haptics => (lua module maybe for unifying)
+
+set particles
+
+set save system
+
+set loader collection, and its collection proxies (another worlds)
 
 ============================================================================================
 
